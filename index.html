@@ -15,35 +15,43 @@
     <!--HEADER-->
     <header class="header">
       <div class="container">
-        <nav class="nav">
           <a class="logo link" href="./index.html" aria-label="WebStudio">
-            <span class="logo-web" lang="en">Web</span><span class="logo-studio-dark" lang="en">Studio</span></a
-          >
-          <ul class="nav-list">
-            <li class="nav-list-item list"><a class="nav-list-link link streampage" href="./index.html">Студия</a></li>
-            <li class="nav-list-item list"><a class="nav-list-link link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav-list-item list"><a class="nav-list-link link" href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <address class="address">
-          <a class="header-address-link link" href="mailto:info@devstudio.com"
-            ><svg class="address-icon">
-              <use href="./images/sprite.svg#envelope"></use>
-            </svg>
-            info@devstudio.com
+            <span class="logo-web" lang="en">Web</span><span class="logo-studio-dark" lang="en">Studio</span>
           </a>
-          <a class="header-address-link link" href="tel:+380961111111">
-            <svg class="address-icon">
-              <use href="./images/sprite.svg#smartphone"></use>
+          <button class="menu-button" type="button" data-menu-button>
+            <svg width="24" height="24" aria-label="переключатель мобильного меню">
+              <use class="icon-cross" href="./images/sprite.svg#icon-cros"></use>
+              <use class="icon-burger" href="./images/sprite.svg#icon-burger"></use>
             </svg>
-            +38 096 111 11 11
-          </a>
-        </address>
+          </button>
+          <div class="nav-menu" data-menu>
+            <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list-item list"><a class="nav-list-link link streampage" href="./index.html">Студия</a></li>
+              <li class="nav-list-item list"><a class="nav-list-link link" href="./portfolio.html">Портфолио</a></li>
+              <li class="nav-list-item list"><a class="nav-list-link link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <address class="address">
+            <a class="header-address-link link" href="mailto:info@devstudio.com"
+              ><svg class="address-icon">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a class="header-address-link link" href="tel:+380961111111">
+              <svg class="address-icon">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </address>
+          </div>
       </div>
     </header>
-    <!--MAIN-->
+    <!-- MAIN
     <main>
-      <!--HERO-->
+      HERO
       <section class="hero">
         <div class="hero-overlay">
           <div class="container">
@@ -52,7 +60,7 @@
           </div>
         </div>
       </section>
-      <!--ADVANTAGES-->
+      ADVANTAGES
       <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Наше предложение</h2>
@@ -76,7 +84,7 @@
           </ul>
         </div>
       </section>
-      <!--SERVICES-->
+      SERVICES
       <section class="services section">
         <div class="container">
           <h2 class="services-title">Чем мы занимаемся</h2>
@@ -118,7 +126,7 @@
           </ul>
         </div>
       </section>
-      <!--TEAM CARD-->
+      TEAM CARD
       <section class="teamcard section">
         <div class="container">
           <h2 class="teamcard-title">Наша команда</h2>
@@ -292,7 +300,7 @@
           </ul>
         </div>
       </section>
-      <!-- CLIENTS LIST -->
+      CLIENTS LIST
       <section class="clients section">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
@@ -343,7 +351,7 @@
         </div>
       </section>
     </main>
-    <!--FOOTER-->
+    FOOTER
     <footer class="footer">
       <div class="container">
         <div class="contacts-container">
@@ -397,7 +405,7 @@
         </div>
       </div>
     </footer>
-    <!-- MODAL -->
+    MODAL
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal-btn-close">
@@ -439,6 +447,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/header-menu.js"></script>
   </body>
   </html>
