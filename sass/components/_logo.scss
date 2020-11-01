@@ -3,7 +3,12 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
-  margin-right: 90px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-right: 80px;
+  }
   &-web {
     color: $accent-color;
   }
