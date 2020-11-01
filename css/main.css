@@ -669,15 +669,8 @@ img {
 }
 
 .advantages {
-  padding-top: 94px;
-}
-
-.advantages-list {
-  display: flex;
-}
-
-.advantages-list-item:not(:last-child) {
-  margin-right: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .advantages-list-item::before {
@@ -701,7 +694,6 @@ img {
 }
 
 .advantages-list-text {
-  max-width: 270px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -722,6 +714,51 @@ img {
 
 .icon-astronaut::before {
   background-image: url("../images/advantages/icon-astronaut.svg");
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .advantages-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .advantages-list-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .advantages-list-item {
+    margin: 15px;
+  }
+  .advantages-list-text {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+  .advantages-list {
+    display: flex;
+  }
+  .advantages-list-item {
+    width: 270px;
+  }
+  .advantages-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
 }
 
 .services-list {
