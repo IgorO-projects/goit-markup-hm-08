@@ -406,7 +406,7 @@ img {
   color: #2196f3;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header .container {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -415,15 +415,13 @@ img {
     margin-bottom: 10px;
   }
   .address {
+    margin-left: 80px;
     font-size: 12px;
     line-height: 1.16;
   }
   .nav-list-link {
     font-size: 14px;
     line-height: 1.14;
-  }
-  .nav {
-    margin-right: 80px;
   }
   .streampage::after {
     bottom: -35px;
