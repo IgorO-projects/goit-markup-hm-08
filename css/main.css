@@ -868,8 +868,12 @@ img {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients-list-item {
+  margin: 15px;
 }
 
 .clients-icon {
@@ -885,7 +889,6 @@ img {
 }
 
 .clients-link {
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -895,6 +898,30 @@ img {
 
 .clients-link:hover, .clients-link:focus {
   border-color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .clients-list-item {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients-link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+  }
 }
 
 .footer {
