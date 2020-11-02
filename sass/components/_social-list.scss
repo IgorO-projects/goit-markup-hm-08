@@ -1,6 +1,6 @@
 .social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     &-link {
       @extend %flex-center;
       width: 44px;
@@ -12,6 +12,9 @@
       &:focus {
       background-color: $accent-color;
     }
+    }
+    &-item:not(:last-child) {
+      margin-right: 10px;
     }
   }
   
@@ -26,5 +29,3 @@
     fill: $classic-white;
   }
   }
-  
-  

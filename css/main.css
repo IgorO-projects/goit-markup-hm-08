@@ -35,7 +35,13 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px;
+  }
 }
 
 img {
@@ -120,16 +126,26 @@ img {
 .teamcard-title,
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .services-title,
+  .teamcard-title,
+  .clients-title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-list-link {
@@ -141,6 +157,10 @@ img {
 
 .social-list-link:hover, .social-list-link:focus {
   background-color: #2196f3;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-icon {
@@ -789,8 +809,8 @@ img {
   background-color: #f5f4fa;
 }
 
-.teamcard-list {
-  display: flex;
+.teamcard-list-img {
+  width: 100%;
 }
 
 .teamcard-list-item {
@@ -800,11 +820,12 @@ img {
 }
 
 .teamcard-list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .teamcard-list-container {
-  padding: 30px 40px;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .teamcard-list-name {
@@ -823,6 +844,24 @@ img {
   line-height: 1.18;
   text-align: center;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .teamcard-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .teamcard-list-item {
+    width: 354px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .teamcard-list-item {
+    width: 270px;
+  }
 }
 
 .clients-list {
