@@ -1,7 +1,7 @@
 .projects-filter-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
   }
 
   .projects-btn {
@@ -31,4 +31,20 @@
       margin-right: 8px;
     }
   }
-  
+  @media screen and (max-width: 767px) {
+    .projects-btn-list-item:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .projects-filter-list {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+  .projects-filter-list {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
