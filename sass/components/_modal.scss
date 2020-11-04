@@ -7,6 +7,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     z-index: 1;
+    overflow-y: scroll;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &.is-hidden {
@@ -18,16 +19,16 @@
   }
 
   .modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    position: relative;
+    top: 92px;
+    
+    translate: scale(1);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   
-    width: 528px;
-    height: 580px;
+    height: 609px;
     background-color: $classic-white;
     padding: 40px;
+    margin: 0 auto;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
@@ -121,8 +122,8 @@
       @extend %flex-center;
       margin-bottom: 30px;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
+      font-size: 12px;
+      line-height: 1.16;
       letter-spacing: 0.03em;
       color: $main-text-color;
     }
@@ -187,9 +188,10 @@
     &-title {
       display: block;
       margin: 0 auto 12px;
+      text-align: center;
       font-weight: 700;
       font-size: 20px;
-      line-height: 1.15;
+      line-height: 1.5;
       letter-spacing: 0.03em;
     }
   }
@@ -202,3 +204,42 @@
     fill: $accent-color;
   }
   }
+@media screen and (max-width: 767px) {
+  
+  .backdrop {
+   padding: 0 15px; 
+   & .modal {
+    max-width: 450px;
+    &-policy-field {
+      display: flex;
+      flex-wrap: wrap;
+      }
+  }
+  }
+  .backdrop.is-hidden .modal {
+    transform: translateY(150%) scale(1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .backdrop .modal {
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop .modal{
+    width: 528px;
+    height: 581px;
+    &-title {
+      font-size: 20px;
+      line-height: 1.15;
+    }
+    &-policy-field {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+}
