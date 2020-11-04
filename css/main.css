@@ -699,13 +699,19 @@ img {
   color: #ffffff;
 }
 
+@media screen and (max-width: 479px) {
+  .hero-title {
+    width: 320px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero-overlay {
     max-width: 480px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .hero-title {
     width: 360px;
   }
