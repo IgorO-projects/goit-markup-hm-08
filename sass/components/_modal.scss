@@ -131,8 +131,8 @@
       content: "";
       display: inline-block;
       margin-right: 8px;
-      width: 16px;
-      height: 15px;
+      min-width: 16px;
+      min-height: 15px;
       border: 2px solid #000000;
       border-radius: 2px;
       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -212,7 +212,7 @@
     max-width: 450px;
     &-policy-field {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: center;
       }
   }
   }
